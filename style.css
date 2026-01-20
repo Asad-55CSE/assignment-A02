@@ -32,12 +32,113 @@
   font-weight: 500;
 }
 .nav-right-button button {
-  background: -webkit-linear-gradient(135deg, #ba22bd 0%,#ffe600  100%);
+  background: -webkit-linear-gradient(135deg, #ba22bd 0%, #ffe600 100%);
   display: flex;
   align-items: center;
   border: none;
   gap: 5px;
   padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  
+}
+
+.background-image-container {
+  grid-area: 1 / 1 / 7 / 12;
+  z-index: -1;
+}
+.background-image-container img {
+  width: 100%;
+  height: 100%;
+} 
+
+.hero-circle {
+  grid-area: 1/ 6 / 5 / 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.hero-circle img {
+  width: 22vw; 
+    height: auto;
+}
+
+.microphone-div {
+  grid-area: 2 / 6 / 4 / 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+z-index: 1;
+   
+}
+
+.microphone-div img {
+  width: 8vw;
+  height: auto;
+}
+
+.banner-text {
+  grid-area: 4 / 5 / 7 / 8; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    z-index: 2; 
+    color: white;
+}
+
+.new{
+    grid-area: 2/6/2/7;
+    justify-self: end;
+    z-index: 3;
+    
+}
+
+.new button {
+    z-index: 3;
+    background-color: #49e98b;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 18px;
+}
+.headline h1 {
+  text-align: center;
+  font-size: 48px;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.headline p{
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+.banner-btn{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+.banner-btn button {
+  background: -webkit-linear-gradient(135deg, #ba22bd 0%, #ffe600 100%);
+  display: flex;
+  align-items: center;
+  border: none;
+  gap: 5px;
+  padding: 10px 10px;
   border-radius: 25px;
   font-size: 16px;
   font-weight: 600;
