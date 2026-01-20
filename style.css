@@ -260,6 +260,7 @@ z-index: 1;
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .video-card-container div{
@@ -283,4 +284,41 @@ z-index: 1;
     height: 100%;
     border: none;
     margin-bottom: 12px;
+}
+
+.meet-host{
+  background-color: #1A0B2E;
+  padding: 0px 200px;
+  padding-bottom: 120px;
+color: white;
+text-align: center;
+}
+
+.meet-host h1{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.host-container{
+  text-align: left;
+  display: flex;
+  background-color: #250E44;
+  padding: 40px;
+  border-radius: 16px;
+  gap: 15px;
+  align-items: center;
+}
+
+.host-social{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.host-social img{
+  width: 30px;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 20px;
 }
