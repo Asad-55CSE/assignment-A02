@@ -6,6 +6,36 @@
   font-optical-sizing: auto;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-circle {
+  transition: transform 0.5s ease;
+}
+
+.microphone-div:hover {
+  animation: spin 2s linear infinite;
+}
+
+
+.nav-right-button button, 
+.banner-btn button {
+  transition: all 0.3s ease; 
+}
+
+.nav-right-button button:hover, .new button:hover,
+.banner-btn button:hover {
+  transform: translateY(-3px) scale(1.05); 
+  box-shadow: 0 10px 20px rgba(186, 34, 189, 0.4); 
+  filter: brightness(1.1); 
+}
+
 .navbar {
   display: flex;
   height: 92px;
@@ -32,6 +62,9 @@
   display: flex;
   gap: 32px;
   list-style-type: none;
+}
+.ham-menu{
+  display: none;
 }
 .nav-middle-menu ul li a {
   text-decoration: none;
@@ -348,4 +381,5 @@
   display: flex;
   gap: 32px;
   list-style-type: none;
+cursor: pointer;
 }

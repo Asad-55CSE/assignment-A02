@@ -1,0 +1,100 @@
+@media screen and (max-width: 1024px) {
+  .about,
+  .para-with-heading,
+  .why-choose,
+  .Episode,
+  .meet-host {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .why-choose-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .Premium-audio-quality,
+  .Mobile-friendly,
+  .Global-Community,
+  .Exclusive-Interviews,
+  .Rich-Resources {
+    grid-area: auto;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .nav-right-button button,
+  .nav-middle-menu {
+    display: none;
+  }
+
+  .ham-menu{
+    display: flex;
+  }
+
+  .navbar {
+    height: 60px;
+    justify-content: space-around;
+  }
+  .navbar h1{
+    text-align: left;
+  }
+
+  .new button {
+  z-index: 3;
+  background-color: #49e98b;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: none;
+  font-size: 10px;
+}
+
+.banner-btn button {
+
+  font-size: 8px;
+  font-weight: 800;
+  padding: 5px;
+  color: white;
+}
+
+.headline h1 {
+  
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+.headline p {
+  margin-bottom: 24px;
+  font-size: 8px;
+}
+.about {
+  padding:40px 20px;
+}
+
+.empty{
+    display: none;
+}
+
+.green-heading-with-para{
+    border-top: 2px solid rgb(80, 73, 73);
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.host-container {
+  text-align: center;
+
+  flex-direction: column;
+  background-color: #250e44;
+  align-items: center;
+}
+
+.host-social{
+    justify-content: center;
+}
+.footer{
+    padding: 10px;
+}
+
+}
